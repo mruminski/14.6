@@ -7,7 +7,13 @@ var Counter = React.createClass({
 
   increment: function() {
     this.setState({
-      counter: this.state.counter +1
+      counter: this.state.counter + 1
+    });
+  },
+
+  decrement: function() {
+    this.setState({
+      counter: this.state.counter - 1
     });
   },
 
