@@ -18,9 +18,27 @@ var Counter = React.createClass({
   },
 
   render: function() {
-    return React.createElement('div', {}, 
-      React.createElement('span', {}, 'Counter: ' + this.state.counter)
-      );
+    return React.createElement(
+      'div',
+      {},
+      React.createElement('p', {}, 'Counter: ' + this.state.counter),
+      React.createElement(
+        'button',
+        {
+          type: 'submit',
+          onClick: this.increment
+        },
+        'increment'
+      ),
+      React.createElement(
+        'button',
+        {
+          type: 'submit',
+          onClick: this.decrement
+        },
+        'decrement'
+      )
+    );
   }
 });
 
