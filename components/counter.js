@@ -73,6 +73,3 @@ var Counter = React.createClass({
     );
   }
 });
-
-var elem = React.createElement(Counter);
-ReactDOM.render(elem, document.getElementById('app'));
